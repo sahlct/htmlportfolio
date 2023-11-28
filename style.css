@@ -1,8 +1,70 @@
 *{
     margin: 0;
 }
-body{
+html,body{
     background-color: gray;
     width: 100%;
     height: 100%;
+}
+.main-body{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column; */
+}
+section{
+    height: 100vh;
+}
+.home{
+    background-image: url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701043200&semt=ais);
+    /* flex-grow: 1; */
+    display: flex;
+}
+.nav{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.home1{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.home2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 400px;
+    height: 400px;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+h1{
+
+}
+#services{
+   
+}
+#projects{
+   
+}
+#contact-me{
+   
+    color: red;
 }
