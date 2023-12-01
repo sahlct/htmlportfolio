@@ -16,7 +16,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: auto;
 }
 
 .home {
@@ -130,7 +130,7 @@ h2 {
 
 #services {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
 }
 
@@ -185,7 +185,7 @@ span {
 #projects {
     background-color: white;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .project-main {
@@ -193,34 +193,20 @@ span {
     height: 100%;
     display: flex;
     justify-content: center;
-    column-gap: 10%;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
 }
 
-.main1abslt {
-    width: 20%;
-    height: 72%;
+.absolutes {
+    width: 275px;
+    /* height: 72%; */
     border: 2px solid black;
     background-color: black;
     border-radius: 50px;
     overflow: hidden;
 }
-
-.main1img {
-    width: 100%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
-.main2abslt {
-    width: 20%;
-    height: 72%;
-    border: 2px solid black;
-    background-color: black;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-.main2img {
+.mainimg {
     width: 100%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -251,22 +237,29 @@ h5 {
 form {
     display: flex;
     flex-direction: column;
-}
-
-form tr:last-child {
     text-align: center;
 }
-
 .form {
     width: 70%;
     height: 50%;
     background-image: url(https://img.freepik.com/free-vector/white-gradient-background-abstract-modern-design_343694-3085.jpg?w=1800&t=st=1701251416~exp=1701252016~hmac=5820059c056a01010a0d07a3fde9579871d06c390d16a4a0fe2e52c5751449af);
-    display: flex;
+    /* display: flex;
     margin-top: 100px;
     align-items: center;
     justify-content: center;
     border: 5px solid white;
-    border-radius: 20px;
+    border-radius: 20px; */
+}
+.tbcontainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: blue;
+    padding: 10px; */
+}
+.griditem{
+    padding: 0px 10px;
+    font-size: 15px;
+    text-align: left;
 }
 
 input {
@@ -332,7 +325,11 @@ footer {
     color: white;
     text-align: left;
 }
-
+.txt{
+    width: 100%;
+    height: 151px;
+    box-sizing: border-box;
+}
 
 @media only screen and (max-width:500px) {
     .nav {
@@ -424,31 +421,22 @@ footer {
         align-items: center;
         gap: 30px;
     }
-    .main1abslt{
+    .absolutes{
         width: 80%;
         height: auto;
     }
     br{
         display: none;
     }
-    .main2abslt{
-        width: 80%;
-        height: auto;
-    }
-    .main1img{
+    .main1mg{
         width: 100%;
         max-height: 260px;
     }
-    .main2img{
-        width: 100%;
-        max-height: 260px;
-    }
-    h5{
 
-    }
     .form{
         margin-top: 20px;
         height: 70%;
+        text-align: center;
     }
     table{
         padding-top: 10px;
@@ -463,7 +451,6 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: row;
-        padding-left: 10%;
     }
     .socialicon{
         width: 20px;
@@ -490,6 +477,13 @@ footer {
         padding-left: 10px;
     }
     #contact-me{
-        height: 100vh;
+        height: auto;
     }
+    .tbcontainer{
+        grid-template-columns: auto;
+    }
+    input{
+        height: 30px;
+    }
+    
 }
